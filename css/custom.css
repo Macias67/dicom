@@ -1,3 +1,4 @@
+@import "nosotros.css";
 * {
     font-family: 'Roboto Slab', serif;
 }
@@ -27,7 +28,7 @@
 }
 
 .intro-message > h1 {
-    font-size: 5em;
+    font-size: 3.5em;
 }
 
 .display-table{
