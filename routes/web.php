@@ -50,3 +50,6 @@ Route::get('soporte-descargas', function() {
 Route::get('pago', function() {
 	return view('pago');
 })->name('pago');
+
+// Ruta para generar pago
+Route::post('genera-pago', 'Pago@create')->name('genera-pago');
