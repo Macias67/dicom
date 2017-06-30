@@ -11,6 +11,45 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', function() {
+	return view('inicio');
+})->name('inicio');
+
+Route::get('nosotros', function() {
+	return view('nosotros');
+})->name('nosotros');
+
+Route::get('software', function() {
+	return view('software');
+})->name('software');
+
+Route::get('software-light-version', function() {
+	return view('software-light');
+})->name('software-light');
+
+Route::get('software-premium', function() {
+	return view('software-premium');
+})->name('software-premium');
+
+Route::get('software-restaurantes', function() {
+	return view('software-restaurantes');
+})->name('software-restaurantes');
+
+Route::get('productos', function() {
+	return view('productos');
+})->name('productos');
+
+Route::get('soporte', function() {
+	return view('soporte');
+})->name('soporte');
+
+Route::get('soporte-descargas', function() {
+	return view('soporte-descargas');
+})->name('soporte-descargas');
+
+Route::get('pago', function() {
+	return view('pago');
+})->name('pago');
+
+// Ruta para generar pago
+Route::post('genera-pago', 'Pago@create')->name('genera.pago');

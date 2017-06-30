@@ -168,6 +168,7 @@ return [
          */
 	
 	    Collective\Html\HtmlServiceProvider::class,
+	    Dinkbit\ConektaCashier\CashierServiceProvider::class,
 
         /*
          * Application Service Providers...
