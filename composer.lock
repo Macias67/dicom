@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "76036da3b5b55b91dbe1e1affa01bf9e",
+    "content-hash": "ab4ed00837b79e8fcc6a918803519699",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -59,6 +59,123 @@
                 "preload"
             ],
             "time": "2016-09-16T12:50:15+00:00"
+        },
+        {
+            "name": "conekta/conekta-php",
+            "version": "v2.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/conekta/conekta-php.git",
+                "reference": "4b517cd50bc8633e2c34619e01f647c0deb9328c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/conekta/conekta-php/zipball/4b517cd50bc8633e2c34619e01f647c0deb9328c",
+                "reference": "4b517cd50bc8633e2c34619e01f647c0deb9328c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=5.2"
+            },
+            "require-dev": {
+                "simpletest/simpletest": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "lib/Conekta/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Conekta  and contributors",
+                    "homepage": "https://github.com/conekta/conekta-php/contributors"
+                }
+            ],
+            "description": "PHP  Library",
+            "homepage": "https://www.conekta.io/",
+            "keywords": [
+                "api",
+                "conekta",
+                "payment processing"
+            ],
+            "time": "2016-07-05T18:13:05+00:00"
+        },
+        {
+            "name": "dinkbit/conekta-cashier",
+            "version": "v2.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dinkbit/conekta-cashier.git",
+                "reference": "bb42e7c1aad43239d1fbeb8c5a748a6ec3bbd5e7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dinkbit/conekta-cashier/zipball/bb42e7c1aad43239d1fbeb8c5a748a6ec3bbd5e7",
+                "reference": "bb42e7c1aad43239d1fbeb8c5a748a6ec3bbd5e7",
+                "shasum": ""
+            },
+            "require": {
+                "conekta/conekta-php": "~2.0.4",
+                "illuminate/filesystem": "5.0.*|5.1.*|5.2.*|5.3.*",
+                "illuminate/support": "5.0.*|5.1.*|5.2.*|5.3.*",
+                "nesbot/carbon": "~1.0",
+                "php": ">=5.4.0",
+                "symfony/http-kernel": "~2.6|~3.0"
+            },
+            "require-dev": {
+                "illuminate/routing": "~5.0",
+                "illuminate/view": "~5.0",
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "4.0.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Dinkbit\\ConektaCashier\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rafael Masri",
+                    "email": "rafael.masri@dinkbit.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "dinkbit",
+                    "email": "developers@dinkbit.com",
+                    "homepage": "https://github.com/dinkbit/conekta-cashier"
+                },
+                {
+                    "name": "Joseph Cohen",
+                    "email": "joseph.cohen@dinkbit.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Dinkbit Cashier nos da una interface para cobrar subscripciones con Conketa en Laravel.",
+            "keywords": [
+                "billing",
+                "conekta",
+                "dinkbit",
+                "laravel"
+            ],
+            "time": "2016-09-28T13:39:02+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -432,6 +549,60 @@
                 "laravel"
             ],
             "time": "2017-03-24T16:31:06+00:00"
+        },
+        {
+            "name": "laravelcollective/html",
+            "version": "v5.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LaravelCollective/html.git",
+                "reference": "299f3dccd61c3f6d89ebb9b10f36fb2a9aee5206"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/299f3dccd61c3f6d89ebb9b10f36fb2a9aee5206",
+                "reference": "299f3dccd61c3f6d89ebb9b10f36fb2a9aee5206",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/http": "5.3.*",
+                "illuminate/routing": "5.3.*",
+                "illuminate/session": "5.3.*",
+                "illuminate/support": "5.3.*",
+                "illuminate/view": "5.3.*",
+                "php": ">=5.6.4"
+            },
+            "require-dev": {
+                "illuminate/database": "5.3.*",
+                "mockery/mockery": "~0.9.4",
+                "phpunit/phpunit": "~5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Collective\\Html\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                },
+                {
+                    "name": "Adam Engebretson",
+                    "email": "adam@laravelcollective.com"
+                }
+            ],
+            "description": "HTML and Form Builders for the Laravel Framework",
+            "homepage": "http://laravelcollective.com",
+            "time": "2017-05-21T22:00:10+00:00"
         },
         {
             "name": "league/flysystem",
