@@ -1,4 +1,4 @@
-Conekta.setPublishableKey('key_KJysdbf6PotS2ut2');
+Conekta.setPublishableKey('key_F6gRDPbrjoCTfPBiWNVJYKA');
 
 var conektaSuccessResponseHandler = function (token) {
     var $form = $("#card-form");

@@ -5,8 +5,9 @@ namespace App;
 use Dinkbit\ConektaCashier\Billable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Dinkbit\ConektaCashier\Contracts\Billable as BillableContract;
 
-class User extends Authenticatable
+class User extends Authenticatable implements BillableContract
 {
 	use Notifiable, Billable;
 	
@@ -27,4 +28,11 @@ class User extends Authenticatable
 	protected $hidden = [
 		'password', 'remember_token',
 	];
+	
+	/**
+	 * The attributes that should be mutated to dates.
+	 *
+	 * @var array
+	 */
+	protected $dates = [ 'trial_ends_at', 'subscription_end_at' ];
 }
