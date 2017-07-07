@@ -2,6 +2,7 @@ Conekta.setPublishableKey('key_F6gRDPbrjoCTfPBiWNVJYKA');
 
 var conektaSuccessResponseHandler = function (token) {
     var $form = $("#card-form");
+    console.log(token);
     //Inserta el token_id en la forma para que se envíe al servidor
     $form.append($('<input type="hidden" name="conektaTokenId" id="conektaTokenId">').val(token.id));
     $form.get(0).submit(); //Hace submit

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ab4ed00837b79e8fcc6a918803519699",
+    "content-hash": "5af9c514034c521560aa62221083edc6",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -62,26 +62,26 @@
         },
         {
             "name": "conekta/conekta-php",
-            "version": "v2.0.5",
+            "version": "V3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/conekta/conekta-php.git",
-                "reference": "4b517cd50bc8633e2c34619e01f647c0deb9328c"
+                "reference": "e03982b9244614c5ac7dcc28c3c366f25303ce1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/conekta/conekta-php/zipball/4b517cd50bc8633e2c34619e01f647c0deb9328c",
-                "reference": "4b517cd50bc8633e2c34619e01f647c0deb9328c",
+                "url": "https://api.github.com/repos/conekta/conekta-php/zipball/e03982b9244614c5ac7dcc28c3c366f25303ce1b",
+                "reference": "e03982b9244614c5ac7dcc28c3c366f25303ce1b",
                 "shasum": ""
             },
             "require": {
                 "ext-curl": "*",
                 "ext-json": "*",
                 "ext-mbstring": "*",
-                "php": ">=5.2"
+                "php": ">=5.3"
             },
             "require-dev": {
-                "simpletest/simpletest": "*"
+                "phpunit/phpunit": "*"
             },
             "type": "library",
             "autoload": {
@@ -99,83 +99,14 @@
                     "homepage": "https://github.com/conekta/conekta-php/contributors"
                 }
             ],
-            "description": "PHP  Library",
+            "description": "Conekta PHP Library",
             "homepage": "https://www.conekta.io/",
             "keywords": [
                 "api",
                 "conekta",
                 "payment processing"
             ],
-            "time": "2016-07-05T18:13:05+00:00"
-        },
-        {
-            "name": "dinkbit/conekta-cashier",
-            "version": "v2.2.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dinkbit/conekta-cashier.git",
-                "reference": "bb42e7c1aad43239d1fbeb8c5a748a6ec3bbd5e7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dinkbit/conekta-cashier/zipball/bb42e7c1aad43239d1fbeb8c5a748a6ec3bbd5e7",
-                "reference": "bb42e7c1aad43239d1fbeb8c5a748a6ec3bbd5e7",
-                "shasum": ""
-            },
-            "require": {
-                "conekta/conekta-php": "~2.0.4",
-                "illuminate/filesystem": "5.0.*|5.1.*|5.2.*|5.3.*",
-                "illuminate/support": "5.0.*|5.1.*|5.2.*|5.3.*",
-                "nesbot/carbon": "~1.0",
-                "php": ">=5.4.0",
-                "symfony/http-kernel": "~2.6|~3.0"
-            },
-            "require-dev": {
-                "illuminate/routing": "~5.0",
-                "illuminate/view": "~5.0",
-                "mockery/mockery": "0.9.*",
-                "phpunit/phpunit": "4.0.*"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Dinkbit\\ConektaCashier\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Rafael Masri",
-                    "email": "rafael.masri@dinkbit.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "dinkbit",
-                    "email": "developers@dinkbit.com",
-                    "homepage": "https://github.com/dinkbit/conekta-cashier"
-                },
-                {
-                    "name": "Joseph Cohen",
-                    "email": "joseph.cohen@dinkbit.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Dinkbit Cashier nos da una interface para cobrar subscripciones con Conketa en Laravel.",
-            "keywords": [
-                "billing",
-                "conekta",
-                "dinkbit",
-                "laravel"
-            ],
-            "time": "2016-09-28T13:39:02+00:00"
+            "time": "2017-05-30T16:47:40+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1010,16 +941,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.8.8",
+            "version": "v0.8.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "fe65c30cbc55c71e61ba3a38b5a581149be31b8e"
+                "reference": "58a31cc4404c8f632d8c557bc72056af2d3a83db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/fe65c30cbc55c71e61ba3a38b5a581149be31b8e",
-                "reference": "fe65c30cbc55c71e61ba3a38b5a581149be31b8e",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/58a31cc4404c8f632d8c557bc72056af2d3a83db",
+                "reference": "58a31cc4404c8f632d8c557bc72056af2d3a83db",
                 "shasum": ""
             },
             "require": {
@@ -1079,7 +1010,7 @@
                 "interactive",
                 "shell"
             ],
-            "time": "2017-06-24T06:16:19+00:00"
+            "time": "2017-07-06T14:53:52+00:00"
         },
         {
             "name": "ramsey/uuid",
@@ -1337,16 +1268,16 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v3.3.2",
+            "version": "v3.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "4054a102470665451108f9b59305c79176ef98f0"
+                "reference": "67535f1e3fd662bdc68d7ba317c93eecd973617e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/4054a102470665451108f9b59305c79176ef98f0",
-                "reference": "4054a102470665451108f9b59305c79176ef98f0",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/67535f1e3fd662bdc68d7ba317c93eecd973617e",
+                "reference": "67535f1e3fd662bdc68d7ba317c93eecd973617e",
                 "shasum": ""
             },
             "require": {
@@ -1396,7 +1327,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2017-06-04T18:15:29+00:00"
+            "time": "2017-06-09T14:53:08+00:00"
         },
         {
             "name": "symfony/finder",
@@ -2848,16 +2779,16 @@
         },
         {
             "name": "phpunit/phpunit-mock-objects",
-            "version": "3.4.3",
+            "version": "3.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "3ab72b65b39b491e0c011e2e09bb2206c2aa8e24"
+                "reference": "a23b761686d50a560cc56233b9ecf49597cc9118"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/3ab72b65b39b491e0c011e2e09bb2206c2aa8e24",
-                "reference": "3ab72b65b39b491e0c011e2e09bb2206c2aa8e24",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/a23b761686d50a560cc56233b9ecf49597cc9118",
+                "reference": "a23b761686d50a560cc56233b9ecf49597cc9118",
                 "shasum": ""
             },
             "require": {
@@ -2903,7 +2834,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2016-12-08T20:27:08+00:00"
+            "time": "2017-06-30T09:13:00+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -3529,16 +3460,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.3.2",
+            "version": "v3.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "9752a30000a8ca9f4b34b5227d15d0101b96b063"
+                "reference": "1f93a8d19b8241617f5074a123e282575b821df8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/9752a30000a8ca9f4b34b5227d15d0101b96b063",
-                "reference": "9752a30000a8ca9f4b34b5227d15d0101b96b063",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/1f93a8d19b8241617f5074a123e282575b821df8",
+                "reference": "1f93a8d19b8241617f5074a123e282575b821df8",
                 "shasum": ""
             },
             "require": {
@@ -3580,7 +3511,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2017-06-02T22:05:06+00:00"
+            "time": "2017-06-15T12:58:50+00:00"
         },
         {
             "name": "webmozart/assert",
