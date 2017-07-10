@@ -6,8 +6,6 @@ use Conekta\Conekta;
 use Conekta\Customer;
 use Conekta\Handler;
 use Conekta\Order;
-use Conekta\ParameterValidationError;
-use Conekta\ProcessingError;
 use Illuminate\Http\Request;
 
 class Pago extends Controller
@@ -32,13 +30,13 @@ class Pago extends Controller
 	{
 		try {
 			$user = Customer::create([
-				"name"            => "Cecilia Paola",
-				"email"           => "fulanito@conekta.com",
-				"phone"           => "+523929418119",
+				"name"            => $request->cliente,
+				"email"           => $request->email,
 				"payment_sources" => [
 					[
 						"type"     => "card",
-						"token_id" => "tok_test_card_declined"
+						"token_id" => $request->conektaTokenId
+						//"token_id" => 'tok_test_visa_4242'
 					]
 				]//payment_sources
 			]);
@@ -47,15 +45,16 @@ class Pago extends Controller
 				[
 					"line_items"    => [
 						[
-							"name"       => "Tacos",
-							"unit_price" => 1000,
-							"quantity"   => 12
+							"name"       => "Pago factura No. " . $request->nofactura,
+							"unit_price" => ( (int) $request->monto * 100 ),
+							"quantity"   => 1
 						]//first line_item
 					], //line_items
 					"currency"      => "MXN",
 					"customer_info" => [
 						"customer_id" => $user->id
 					], //customer_info
+					"metadata"      => [ "factura" => $request->nofactura, "ciudad" => $request->ciudad ],
 					"charges"       => [
 						[
 							"payment_method" => [
@@ -67,13 +66,9 @@ class Pago extends Controller
 				]//order
 			);
 			
-			echo $order;
-		} catch (ProcessingError $error) {
-			echo $error->getMessage();
-		} catch (ParameterValidationError $error) {
-			echo $error->getMessage();
+			return view('pagocorrecto', ['msg' => 'La factura ha sido pagada con exito.']);
 		} catch (Handler $error) {
-			echo $error->getMessage();
+			return view('pagocorrecto', [ "error_msg" => $error->getMessage() ]);
 		}
 	}
 	

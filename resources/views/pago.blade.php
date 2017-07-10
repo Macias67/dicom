@@ -32,7 +32,10 @@
 							<input type = "text" class = "form-control" id = "noFactura" name = "nofactura" placeholder = "No. de Factura o No. de Referencia">
 						</div>
 						<div class = "form-group">
-							<input type = "text" class = "form-control" id = "cliente" name = "cliente" placeholder = "Cliente">
+							<input type = "text" class = "form-control" id = "cliente" name = "cliente" placeholder = "Nombre cliente">
+						</div>
+						<div class = "form-group">
+							<input type = "email" class = "form-control" id = "email" name = "email" placeholder = "Email">
 						</div>
 						<div class = "form-group">
 							<input type = "text" class = "form-control" id = "monto" name = "monto" placeholder = "Monto a pagar">
@@ -40,6 +43,12 @@
 						<div class = "form-group">
 							<input type = "text" class = "form-control" id = "ciudad" name = "ciudad" placeholder = "Ciudad">
 						</div>
+						<label class="radio-inline">
+							<input type="radio" name="modoPago" id="pagoTarjeta" value="card" checked> Pago con Tarjeta de débito/crédito
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="modoPago" id="pagoOXXO" disabled> Pago OXXO (Próximamente)
+						</label>
 						<br>
 						<h3 style="color: orange">Datos de la tarjeta</h3>
 						<div class = "form-group">

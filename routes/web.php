@@ -52,4 +52,4 @@ Route::get('pago', function() {
 })->name('pago');
 
 // Ruta para generar pago
-Route::get('genera-pago', 'Pago@create')->name('genera.pago');
+Route::post('genera-pago', 'Pago@create')->name('genera.pago');

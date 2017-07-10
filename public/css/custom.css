@@ -96,7 +96,7 @@
 	font-weight: 400;
 }
 
-.contacto input[type=text] {
+.contacto input[type=text], input[type=email] {
 	height: 4em;
 }
 
