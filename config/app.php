@@ -4,18 +4,6 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Application Name
-    |--------------------------------------------------------------------------
-    |
-    | This value is the name of your application. This value is used when the
-    | framework needs to place the application's name in a notification or
-    | any other location as required by the application or its packages.
-    */
-	
-	'name' => 'Laravel',
-
-    /*
-    |--------------------------------------------------------------------------
     | Application Environment
     |--------------------------------------------------------------------------
     |
@@ -24,8 +12,8 @@ return [
     | services your application utilizes. Set this in your ".env" file.
     |
     */
-	
-	'env' => env('APP_ENV', 'production'),
+
+    'env' => env('APP_ENV', 'production'),
 
     /*
     |--------------------------------------------------------------------------
@@ -37,8 +25,8 @@ return [
     | application. If disabled, a simple generic error page is shown.
     |
     */
-	
-	'debug' => env('APP_DEBUG', false),
+
+    'debug' => env('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -50,8 +38,8 @@ return [
     | your application so that it is used when running Artisan tasks.
     |
     */
-	
-	'url' => env('APP_URL', 'http://localhost'),
+
+    'url' => env('APP_URL', 'http://localhost'),
 
     /*
     |--------------------------------------------------------------------------
@@ -63,8 +51,8 @@ return [
     | ahead and set this to a sensible default for you out of the box.
     |
     */
-	
-	'timezone' => 'America/Mexico_City',
+
+    'timezone' => 'UTC',
 
     /*
     |--------------------------------------------------------------------------
@@ -76,8 +64,8 @@ return [
     | to any of the locales which will be supported by the application.
     |
     */
-	
-	'locale' => 'en',
+
+    'locale' => 'en',
 
     /*
     |--------------------------------------------------------------------------
@@ -89,8 +77,8 @@ return [
     | the language folders that are provided through your application.
     |
     */
-	
-	'fallback_locale' => 'en',
+
+    'fallback_locale' => 'en',
 
     /*
     |--------------------------------------------------------------------------
@@ -102,10 +90,10 @@ return [
     | will not be safe. Please do this before deploying an application!
     |
     */
-	
-	'key' => env('APP_KEY'),
-	
-	'cipher' => 'AES-256-CBC',
+
+    'key' => env('APP_KEY'),
+
+    'cipher' => 'AES-256-CBC',
 
     /*
     |--------------------------------------------------------------------------
@@ -119,10 +107,8 @@ return [
     | Available Settings: "single", "daily", "syslog", "errorlog"
     |
     */
-	
-	'log' => env('APP_LOG', 'single'),
-	
-	'log_level' => env('APP_LOG_LEVEL', 'debug'),
+
+    'log' => env('APP_LOG', 'single'),
 
     /*
     |--------------------------------------------------------------------------
@@ -134,8 +120,8 @@ return [
     | this array to grant expanded functionality to your applications.
     |
     */
-	
-	'providers' => [
+
+    'providers' => [
 
         /*
          * Laravel Framework Service Providers...
@@ -152,7 +138,6 @@ return [
         Illuminate\Foundation\Providers\FoundationServiceProvider::class,
         Illuminate\Hashing\HashServiceProvider::class,
         Illuminate\Mail\MailServiceProvider::class,
-        Illuminate\Notifications\NotificationServiceProvider::class,
         Illuminate\Pagination\PaginationServiceProvider::class,
         Illuminate\Pipeline\PipelineServiceProvider::class,
         Illuminate\Queue\QueueServiceProvider::class,
@@ -164,21 +149,13 @@ return [
         Illuminate\View\ViewServiceProvider::class,
 
         /*
-         * Package Service Providers...
-         */
-	
-	    Collective\Html\HtmlServiceProvider::class,
-		//Dinkbit\ConektaCashier\CashierServiceProvider::class,
-
-        /*
          * Application Service Providers...
          */
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
+	    Collective\Html\HtmlServiceProvider::class,
     ],
 
     /*
@@ -191,14 +168,13 @@ return [
     | the aliases are "lazy" loaded so they don't hinder performance.
     |
     */
-	
-	'aliases' => [
+
+    'aliases' => [
 
         'App' => Illuminate\Support\Facades\App::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
         'Auth' => Illuminate\Support\Facades\Auth::class,
         'Blade' => Illuminate\Support\Facades\Blade::class,
-        'Bus' => Illuminate\Support\Facades\Bus::class,
         'Cache' => Illuminate\Support\Facades\Cache::class,
         'Config' => Illuminate\Support\Facades\Config::class,
         'Cookie' => Illuminate\Support\Facades\Cookie::class,
@@ -212,7 +188,6 @@ return [
         'Lang' => Illuminate\Support\Facades\Lang::class,
         'Log' => Illuminate\Support\Facades\Log::class,
         'Mail' => Illuminate\Support\Facades\Mail::class,
-        'Notification' => Illuminate\Support\Facades\Notification::class,
         'Password' => Illuminate\Support\Facades\Password::class,
         'Queue' => Illuminate\Support\Facades\Queue::class,
         'Redirect' => Illuminate\Support\Facades\Redirect::class,
@@ -226,7 +201,6 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
 

@@ -1,17 +1,13 @@
 #ventajas p {
-	font-size: 2.3em;
+    font-size: 2.3em;
 }
 
 .intro-header-pago {
-	padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-	padding-bottom: 50px;
-	text-align: center;
-	color: #f8f8f8;
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
 	background: url(../img/banners/pago.png) no-repeat center center;
-	background-size: cover;
-	height: 100%;
-}
-
-.radio-inline {
-	color: white;
+    background-size: cover;
+    height: 100%;
 }

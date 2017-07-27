@@ -2,6 +2,12 @@
 
 @section('title', 'Nosotros')
 
+
+@section('csslibrary')
+	<link rel = "stylesheet" type = "text/css" href = "css/nosotros_carousel/style.css"/>
+	<link rel = "stylesheet" type = "text/css" href = "css/jquery.jscrollpane.css" media = "all"/>
+@endsection
+
 @section('intro-header')
 	<!-- Header -->
 	<div class = "intro-header-nosotros">
@@ -28,12 +34,12 @@
 					<div class = "clearfix"></div>
 					<h1 class = "section-heading h-somos">Nosotros</h1>
 					<p class = "text-justify p-somos">Somos una empresa joven con más de 20 años de experiencia, formada
-													  por jóvenes en constante actualización y desarrollo, dispuestos a
-													  dar lo mejor de sí mismos cada día simplificando la operación
-													  administrativa de tu negocio.</p>
+						por jóvenes en constante actualización y desarrollo, dispuestos a
+						dar lo mejor de sí mismos cada día simplificando la operación
+						administrativa de tu negocio.</p>
 					<p class = "text-justify p-somos">Estamos convencidos de que nosotros crecemos con nuestros
-													  clientes, por lo que el objetivo es desarrollar y mejorar las
-													  herramientas para hacer crecer tu negocio.</p>
+						clientes, por lo que el objetivo es desarrollar y mejorar las
+						herramientas para hacer crecer tu negocio.</p>
 				</div>
 			</div>
 		</div>
@@ -116,4 +122,152 @@
 		</div>
 		<!-- /.container -->
 	</div>
+	
+	<!-- Fichas de contacto-->
+	<div class = "content-section-b orangeBg">
+		<div class = "container">
+			<div class = "row">
+				<h1 class = "text-center white-text">Hola</h1>
+				<div id = "ca-container" class = "ca-container">
+					<div class = "ca-wrapper">
+						<div class = "ca-item ca-item-1">
+							<div class = "ca-item-main">
+								<div class = "ca-icon"></div>
+								<p class = "lead">Nayeli López</p>
+								<p>Recepción</p>
+							</div>
+							<div class = "ca-content-wrapper">
+								<div class = "ca-content">
+								</div>
+							</div>
+						</div>
+						<div class = "ca-item ca-item-2">
+							<div class = "ca-item-main">
+								<div class = "ca-icon"></div>
+								<p class = "lead">Jose Luis Cárdenas</p>
+								<p>Sistemas</p>
+							</div>
+							<div class = "ca-content-wrapper">
+								<div class = "ca-content">
+								</div>
+							</div>
+						</div>
+						<div class = "ca-item ca-item-3">
+							<div class = "ca-item-main">
+								<div class = "ca-icon"></div>
+								<p class = "lead">Alan Rodríguez</p>
+								<p>Soporte Técnico</p>
+							</div>
+							<div class = "ca-content-wrapper">
+								<div class = "ca-content">
+								</div>
+							</div>
+						</div>
+						<div class = "ca-item ca-item-4">
+							<div class = "ca-item-main">
+								<div class = "ca-icon"></div>
+								<p class = "lead">Berenice Flores</p>
+								<p>Administración y Cobranza</p>
+							</div>
+							<div class = "ca-content-wrapper">
+								<div class = "ca-content">
+								</div>
+							</div>
+						</div>
+						<div class = "ca-item ca-item-5">
+							<div class = "ca-item-main">
+								<div class = "ca-icon"></div>
+								<p class = "lead">Rocío Ramírez</p>
+								<p>Ventas</p>
+							</div>
+							<div class = "ca-content-wrapper">
+								<div class = "ca-content">
+								</div>
+							</div>
+						</div>
+						<div class = "ca-item ca-item-6">
+							<div class = "ca-item-main">
+								<div class = "ca-icon"></div>
+								<p class = "lead">Ash Esparza</p>
+								<p>Asesoría Técnica</p>
+							</div>
+							<div class = "ca-content-wrapper">
+								<div class = "ca-content">
+								</div>
+							</div>
+						</div>
+						<div class = "ca-item ca-item-7">
+							<div class = "ca-item-main">
+								<div class = "ca-icon"></div>
+								<p class = "lead">Alejandra Alfaro</p>
+								<p>Recepción</p>
+							</div>
+							<div class = "ca-content-wrapper">
+								<div class = "ca-content">
+								</div>
+							</div>
+						</div>
+						<div class = "ca-item ca-item-8">
+							<div class = "ca-item-main">
+								<div class = "ca-icon"></div>
+								<p class = "lead">Alina Rodríguez</p>
+								<p>Soporte Técnico</p>
+							</div>
+							<div class = "ca-content-wrapper">
+								<div class = "ca-content">
+								</div>
+							</div>
+						</div>
+						<div class = "ca-item ca-item-9">
+							<div class = "ca-item-main">
+								<div class = "ca-icon"></div>
+								<p class = "lead">Dante Alejandro Acuña</p>
+								<p>Soporte Técnico</p>
+							</div>
+							<div class = "ca-content-wrapper">
+								<div class = "ca-content">
+								</div>
+							</div>
+						</div>
+						<div class = "ca-item ca-item-10">
+							<div class = "ca-item-main">
+								<div class = "ca-icon"></div>
+								<p class = "lead">Lydia Gutiérrez Gerencia</p>
+								<p>Administración</p>
+							</div>
+							<div class = "ca-content-wrapper">
+								<div class = "ca-content">
+								</div>
+							</div>
+						</div>
+						<div class = "ca-item ca-item-11">
+							<div class = "ca-item-main">
+								<div class = "ca-icon"></div>
+								<p class = "lead">Oscar Parra</p>
+								<p>Director General</p>
+							</div>
+							<div class = "ca-content-wrapper">
+								<div class = "ca-content">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+		</div>
+	</div>
+	<!-- /Fichas de contacto-->
+@endsection
+
+@section('jslibrary')
+	<!-- jQuery -->
+	<script type = "text/javascript" src = "http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script type = "text/javascript" src = "js/carousel/jquery.easing.1.3.js"></script>
+	<!-- the jScrollPane script -->
+	<script type = "text/javascript" src = "js/carousel/jquery.mousewheel.js"></script>
+	<script type = "text/javascript" src = "js/carousel/jquery.contentcarousel.js"></script>
+	<script type = "text/javascript">
+        $('#ca-container').contentcarousel();
+	</script>
 @endsection

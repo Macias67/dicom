@@ -85,6 +85,7 @@
 @endsection
 
 @section('jslibrary')
+	@parent
 	<script type = "text/javascript" src = "https://conektaapi.s3.amazonaws.com/v0.3.2/js/conekta.js"></script>
 	<script type = "text/javascript" src = "js/tokenizer.js"></script>
 @endsection

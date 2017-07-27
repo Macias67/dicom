@@ -2,6 +2,10 @@
 
 @section('title', 'Soporte')
 
+@section('csslibrary')
+	<link href = "css/soporte.css" rel = "stylesheet">
+@endsection
+
 @section('intro-header')
 	<!-- Header -->
 	<div class = "intro-header-soporte">

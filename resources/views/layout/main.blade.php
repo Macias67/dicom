@@ -9,6 +9,10 @@
 	
 	<title>DICOM - @yield('title')</title>
 	
+	<!-- Custom Fonts -->
+	<link href = "https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel = "stylesheet">
+	<link href = "font-awesome/css/font-awesome.min.css" rel = "stylesheet" type = "text/css">
+	
 	<!-- Bootstrap Core CSS -->
 	<link href = "css/bootstrap.min.css" rel = "stylesheet">
 	
@@ -16,9 +20,10 @@
 	<link href = "css/landing-page.css" rel = "stylesheet">
 	<link href = "css/custom.css" rel = "stylesheet">
 	
-	<!-- Custom Fonts -->
-	<link href = "font-awesome/css/font-awesome.min.css" rel = "stylesheet" type = "text/css">
-	<link href = "https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel = "stylesheet">
+@yield('csslibrary')
+
+<!-- Favicon -->
+	<link href = "images/favicon.png" rel = "icon" type = "image/png">
 </head>
 
 <body>
@@ -72,7 +77,7 @@
 				<h4 class = "text-center">Tel: (33) 1377-0242</h4>
 				<h1 class = "text-center">Contáctanos</h1>
 				<h5 class = "text-center">Nuestro equipo de atencion a clientes estamos encantados <br> de responder
-										  cualquier solicitud, pregunta o comentario:</h5>
+					cualquier solicitud, pregunta o comentario:</h5>
 				<br>
 				<form>
 					<div class = "col-lg-6 col-md-6">
@@ -127,11 +132,6 @@
 
 <!-- SCRIPTS -->
 <a href = "#" class = "back-to-top"></a>
-
-<!-- jQuery -->
-<script src = "js/jquery.js"></script>
-<!-- Bootstrap Core JavaScript -->
-<script src = "js/bootstrap.min.js"></script>
 
 @yield('jslibrary')
 
