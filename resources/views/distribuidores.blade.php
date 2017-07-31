@@ -38,20 +38,6 @@
 					</tr>
 					</tbody>
 				</table>
-				<br>
-				<div class = "col-md-12">
-					<div class = "col-md-4 col-md-push-1">
-						<img src = "http://via.placeholder.com/130x130" alt = "logo" class = "img-circle img-responsive">
-					</div>
-					<div class = "col-md-7">
-						<blockquote>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-							<footer>Someone famous in <cite title = "Source Title">Source Title</cite></footer>
-						</blockquote>
-					</div>
-				
-				
-				</div>
 			</div>
 		</div>
 	</div>
