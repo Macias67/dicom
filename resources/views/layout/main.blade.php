@@ -19,7 +19,7 @@
 	<!-- Custom CSS -->
 	<link href = "css/landing-page.css" rel = "stylesheet">
 	<link href = "css/custom.css" rel = "stylesheet">
-	
+
 @yield('csslibrary')
 
 <!-- Favicon -->
@@ -39,7 +39,12 @@
 				<div class = "row">
 					<div class = "col-md-9 col-sm-6">
 						<span>Tel: (33) 1377-0243</span><br>
-						<span>Guadalajara, Jalisco, México</span>
+						<span>Guadalajara, Jalisco, México</span><br>
+						@if(Auth::check())
+							<small>{{ Auth::user()->name }} | <a href = "{{route('logout')}}">Salir</a></small>
+						@else
+							<small><a href = "{{route('entrar')}}">Entrar</a></small>
+						@endif
 					</div>
 					<div class = "col-md-3 col-sm-6">
 						<a class = "fa fa-facebook-square fa-2x" href = "https://www.facebook.com/PuntodeventaPZ/?ref=br_rs" target = "_blank"></a>
@@ -53,6 +58,7 @@
 							<li><a href = "{{route('software')}}">Software</a></li>
 							<li><a href = "{{route('productos')}}">Productos</a></li>
 							<li><a href = "{{route('soporte')}}">Soporte</a></li>
+							<li><a href = "{{route('distribuidores')}}">Distribuidores</a></li>
 							<li><a href = "#contactSection">Contacto</a></li>
 						</ul>
 					</div>

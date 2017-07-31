@@ -49,5 +49,21 @@ Route::get('pago', function() {
 	return view('pago');
 })->name('pago');
 
+Route::get('entrar', function() {
+	return view('login');
+})->name('entrar');
+
+Route::get('distribuidores', function() {
+	return view('distribuidores');
+})->name('distribuidores');
+
+Route::get('casos-exito', function() {
+	return view('casosdeexito');
+})->name('casos-exito');
+
 // Ruta para generar pago
 Route::post('genera-pago', 'Pago@create')->name('genera.pago');
+
+// Ruta para validar credenciales
+Route::post('login', 'Session@login')->name('login');
+Route::get('logout', 'Session@logout')->name('logout');
