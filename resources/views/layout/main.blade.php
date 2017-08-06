@@ -38,7 +38,7 @@
 			<div class = "col-lg-9 col-sm-6 display-cell">
 				<div class = "row">
 					<div class = "col-md-9 col-sm-6">
-						<span>Tel: (33) 1377-0243</span><br>
+						<span>Tel: (01 33) 13 77 02 43</span><br>
 						<span>Guadalajara, Jalisco, México</span><br>
 						@if(Auth::check())
 							<small>{{ Auth::user()->name }} | <a href = "{{route('logout')}}">Salir</a></small>
@@ -80,7 +80,7 @@
 		<div class = "row">
 			<div class = "col-md-8 col-md-push-2">
 				<img src = "img/LOGO DICOM 400x170.png" alt = "" class = "img-responsive center-block"><br>
-				<h4 class = "text-center">Tel: (33) 1377-0242</h4>
+				<h4 class = "text-center">Tel: (01 33) 1377 0243</h4>
 				<h1 class = "text-center">Contáctanos</h1>
 				<h5 class = "text-center">Nuestro equipo de atencion a clientes estamos encantados <br> de responder
 					cualquier solicitud, pregunta o comentario:</h5>

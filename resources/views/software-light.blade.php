@@ -2,6 +2,10 @@
 
 @section('title', 'Software Light')
 
+@section('csslibrary')
+	<link href = "css/software-light.css" rel = "stylesheet">
+@endsection
+
 @section('intro-header')
 	<div class = "container" style = "background-color: white">
 		<h1 class = "text-center" style = "font-size: 4em; color: #d5730d; margin: 50px 0;">PuntoZero "Light

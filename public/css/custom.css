@@ -149,6 +149,37 @@
 	color: rgba(204, 110, 10, 1);
 }
 
+h1 > a {
+	color: white;
+	-webkit-transition: color 1s; /* Safari */
+	transition: all 1s;
+}
+
+h1 > a:hover {
+	color: rgba(204, 110, 10, 1);
+	text-decoration: none;
+	font-size: 40px;
+}
+
+ul#tutoriales > li > a {
+	color: rgb(214, 116, 15);
+	-webkit-transition: color .1s; /* Safari */
+	transition: all .1s;
+}
+
+ul#tutoriales > li > a:hover {
+	color: rgb(204, 194, 0);
+	text-decoration: none;
+	font-size: 28px;
+}
+
+#descargas > p > a {
+	color: inherit;
+}
+
+#descargas > P > a:hover {
+}
+
 /*FOOTER*/
 blockquote > footer {
 	background-color: transparent;

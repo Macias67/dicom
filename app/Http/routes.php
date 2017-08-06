@@ -61,6 +61,10 @@ Route::get('casos-exito', function() {
 	return view('casosdeexito');
 })->name('casos-exito');
 
+Route::get('file/{filename}', function( $filename ) {
+	return response()->download(public_path('descargas\\' . $filename));
+})->name('download');
+
 // Ruta para generar pago
 Route::post('genera-pago', 'Pago@create')->name('genera.pago');
 

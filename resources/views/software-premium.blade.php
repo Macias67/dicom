@@ -2,6 +2,10 @@
 
 @section('title', 'Software Premium')
 
+@section('csslibrary')
+	<link href = "css/software-premium.css" rel = "stylesheet">
+@endsection
+
 @section('intro-header')
 	<div class = "container" style = "background-color: white">
 		<h1 class = "text-center" style = "font-size: 4em; color: #d5730d; margin: 50px 0;">PuntoZero "Premium"</h1>
@@ -29,7 +33,7 @@
 				<div class = "col-lg-8 col-lg-offset-2 col-sm-12">
 					<div class = "clearfix"></div>
 					<h1 class = "section-heading" style = "color: orange">El Punto de Venta y control administrativo más
-																		  sencillo del mercado. </h1>
+						sencillo del mercado. </h1>
 					<p class = "text-justify p-somos">
 						Quiere dedicarse a administrar su negocio y tomar decisiones verdaderamente importantes sin
 						necesidad de encontrarse todo el día en el mostrador? ¡Esta es la solución ideal! PuntoZero
@@ -80,6 +84,69 @@
 							<image x = "0px" y = "0px" width = "70px" height = "68px" xlink:href = "data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABECAMAAAALOLO9AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABYlBMVEX////biDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDDbiDD////WZSjXAAAAdHRSTlMAAF3NysvCDoYUdvYSZ/UEPykiifcyIzwgi+8rf+h43HHXEG/eDGbMDcYDVmDFBki2vk+5RvqpMaaNtSGkaazmN54v+JmU8irzkCTuivCSHuTgeRaEci6RyI7DwbQRWe11d68nz1RQvwWi/dttH1t9jI+HR37D920AAAABYktHRACIBR1IAAAAB3RJTUUH4QYWFiQlSbl1RwAAAaJJREFUWMPt1ldXwjAUB/BcEBVxgSKgqOBCnKjgFhEVFbfiwD1xD7Tf/yhNjgds0qYtL5zT/0sf7s3vkCZpQEgMFMZkLmPEUl4BlCAqUymwY+VnqtiKrdpgDMZgDMZgSompYTO1oMDU1dsdJA1sptFJeppcbjrjEVSluYUxKa8apdXBfDdt/Eq7FZgM+HgVf4fsSnXyKV3dCgvew6MEehX3jUlZCfZxbL9+JcXCt4sH5JXBIc7DMCynhPjPlIwzonSm8jPKUsZADQPhCFUZB3UMTNCUSWAxU6HpXGYkFZdUmZWOnxOHR9E87ohJO2L/57VA+RlRXEJB/IxTWuKLBcoSbTbLYikhx8DKap6yBloZSK7/KRugnQH3JlG2QA8D2zti2Qv6GLDu/lb3QC8D+wkhBfoZcB5AMRjZGEyJMocamSPCHGMmqZFJE+YEM2GNzClhzjDjP9ekXODRNpQiH5RLz5XqXN+QwbXoVihCAgjdFYG5R8iuXwnlbs2MXsWML99MRJfy8EjucMfTs2bk5TW38OSvwNv7x2c2rTbZL9833j8/e/2J7Cxd/7wAAAAASUVORK5CYII="/>
 						</svg>
 					</div>
+				</div>
+			</div>
+			<div class = "row">
+				<div class = "col-lg-8 col-lg-offset-2 col-sm-12">
+					<h1 class = "section-heading" style = "color: orange">Diferencia entre versiones Ligth y
+						Premium</h1>
+					<br>
+					<table class = "table table-responsive" style = "background-color: #ececec">
+						<tr style = "color: orange; font-size: 22px">
+							<th>Característica/Funcionalidad</th>
+							<th>Light</th>
+							<th>Premium</th>
+						</tr>
+						<tr style = "color: gray">
+							<td>Catálogo de productos, líneas y sublineas, marcas,
+								unidades de medida, kits (paquetes de armado y desarmado), servicios, presentaciones,
+								claves
+								alternas. <br>
+								Aplicación de fórmulas para obtener precios de venta de modo automático. <br>
+								Manejo de hasta 5 listas de precios. <br>
+								Control de impuestos IVA, IEPS.
+							</td>
+							<td>
+								<img src = "{{asset('img/yes.png')}}" alt = "yes">
+							</td>
+							<td>
+								<img src = "{{asset('img/yes.png')}}" alt = "yes">
+							</td>
+						</tr>
+						<tr style = "color: gray">
+							<td>Catálogo de proveedores, control de compras, compras no deducibles,
+								compras no deducibles, compras a crédito, reportes de pagos, antigüedad de saldos de
+								proveedores.
+							</td>
+							<td><img src = "{{asset('img/yes.png')}}" alt = "yes"></td>
+							<td><img src = "{{asset('img/yes.png')}}" alt = "yes"></td>
+						</tr>
+						<tr style = "color: gray">
+							<td>Control de vendedores, reporte de comisiones de venta.</td>
+							<td><img src = "{{asset('img/no.png')}}" alt = "yes"></td>
+							<td><img src = "{{asset('img/yes.png')}}" alt = "yes"></td>
+						</tr>
+						<tr style = "color: gray">
+							<td>Catálogo de clientes con remisiones, cotizaciones, facturación electrónica. <br>
+								Ventas a crédito, cobranza, antigüedad de saldos de clientes.
+							</td>
+							<td><img src = "{{asset('img/no.png')}}" alt = "yes"></td>
+							<td><img src = "{{asset('img/yes.png')}}" alt = "yes"></td>
+						</tr>
+						<tr style = "color: gray">
+							<td>Módulo de punto de venta, con reportes de ventas, cortes, utilidades.</td>
+							<td><img src = "{{asset('img/yes.png')}}" alt = "yes"></td>
+							<td><img src = "{{asset('img/yes.png')}}" alt = "yes">
+							<td>
+						</tr>
+					</table>
+					<br>
+					<h1 class = "section-heading" style = "color: orange">Requerimientos</h1>
+					<br>
+					<p>Plataforma:</p>
+					<p>Windows 2000, XP, Vista, 7, 8, 10, SERVER 2008, 2010, 2012.</p>
+					<p>Equipo Mínimo:</p>
+					<b>Celeron 500MHz, 2 GB RAM, 500 Mb libres en Disco Duro.</b>
 				</div>
 			</div>
 		</div>

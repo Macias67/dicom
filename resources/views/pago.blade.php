@@ -2,6 +2,10 @@
 
 @section('title', 'Pago en Línea')
 
+@section('csslibrary')
+	<link href = "css/pago.css" rel = "stylesheet">
+@endsection
+
 @section('intro-header')
 	<!-- Header -->
 	<div class = "intro-header-pago">

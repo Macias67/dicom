@@ -1,6 +1,6 @@
 /* Circular Content Carousel Style */
 .ca-container{
-	background-color: : transparent;
+	background-color: transparent;
 	position:relative;
 	margin:25px auto 20px auto;
 	width:990px;
@@ -82,11 +82,11 @@
 	background-size: cover;
 }
 .ca-item-6 .ca-icon{
-	background-image:url("https://placehold.it/240x190");
+	background-image: url("../../img/PERSONAL_PNG/Ash.png");
 	background-size: cover;
 }
 .ca-item-7 .ca-icon{
-	background-image:url("https://placehold.it/240x190");
+	background-image: url("../../img/PERSONAL_PNG/Alejandra.png");
 	background-size: cover;
 }
 .ca-item-8 .ca-icon{

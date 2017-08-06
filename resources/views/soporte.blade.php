@@ -4,6 +4,7 @@
 
 @section('csslibrary')
 	<link href = "css/soporte.css" rel = "stylesheet">
+	<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css"/>
 @endsection
 
 @section('intro-header')
@@ -33,10 +34,10 @@
 					<div class = "clearfix"></div>
 					<h1 class = "section-heading h-somos text-center">SOPORTE</h1>
 					<p class = "text-justify p-somos">Ponemos a tu disposición toda la documentación, videos y manuales
-													  necesarios para el funcionamiento de tu sistema punto de venta, en
-													  caso que requerir atención técnica especial puedes llamar,
-													  descargar el manual o actualización o bien dejar un e-mail de
-													  ticket de soporte y a la brevedad nos comunicaremos contigo.</p>
+						necesarios para el funcionamiento de tu sistema punto de venta, en
+						caso que requerir atención técnica especial puedes llamar,
+						descargar el manual o actualización o bien dejar un e-mail de
+						ticket de soporte y a la brevedad nos comunicaremos contigo.</p>
 				</div>
 			</div>
 			<br>
@@ -90,21 +91,31 @@
 				<div class = "col-lg-6 col-lg-offset-3 col-sm-12">
 					<div class = "clearfix"></div>
 					<h1 class = "section-heading text-center" style = "color: #999999">Videos y Tutoriales</h1>
-					<ul style = "color: rgb(214,116,15); font-size: 26px" class = "lead">
-						<li>Modo de Uso de Bares y Restaurantes</li>
-						<li>Configuración Bares y Restaurantes</li>
+					<ul id = "tutoriales" style = "color: rgb(214,116,15); font-size: 26px" class = "lead">
+						<li>
+							<a data-fancybox href = "https://www.youtube.com/watch?v=0-RYSf91omw&autoplay=1&rel=0&controls=0&showinfo=0">Modo
+								de Uso de Bares y Restaurantes.</a></li>
+						<li>
+							<a data-fancybox href = "https://www.youtube.com/watch?v=VNqPbVuVdV8&autoplay=1&rel=0&controls=0&showinfo=0">Configuración
+								Bares y Restaurantes.</a></li>
 						<li>Series/lotes de productos.</li>
-						<li>Alta y modificaciones de usuarios</li>
-						<li>Dar de alta productos y proveedores</li>
-						<li>Como vender desde punto de venta.</li>
-						<li>Reportes y Herramientas de punto de venta</li>
+						<li>
+							<a data-fancybox href = "https://www.youtube.com/watch?v=uB44-yduO2Y&autoplay=1&rel=0&controls=0&showinfo=0">Alta
+								y modificaciones de usuarios.</a></li>
+						<li>
+							<a data-fancybox href = "https://www.youtube.com/watch?v=xM_dEovadA0&autoplay=1&rel=0&controls=0&showinfo=0">Dar
+								de alta productos y proveedores.</a></li>
+						<li>
+							<a data-fancybox href = "https://www.youtube.com/watch?v=8sYk7lBFFbs&autoplay=1&rel=0&controls=0&showinfo=0">Como
+								vender desde punto de venta.</a></li>
+						<li>
+							<a data-fancybox href = "https://www.youtube.com/watch?v=u3HSTlxuA8Y&autoplay=1&rel=0&controls=0&showinfo=0">Reportes
+								y Herramientas de punto de venta.</a></li>
 						<li>Reparar tablas con Control Center</li>
 						<li>Configurar folios CFD</li>
 						<li>Agregar campos a Facturas</li>
 						<li>Como Instalar PuntoZero</li>
 					</ul>
-					<br>
-					<iframe width = "560" height = "315" src = "https://www.youtube.com/embed/LVsREM9MahM" frameborder = "0" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
@@ -129,83 +140,65 @@
 					</h4>
 				</div>
 			</div>
-			<div id = "collapseFive-3" class = "container panel-collapse collapse">
+			<div id = "collapseFive-3" class = "container  ">
 				<div class = "panel-body">
-					<div class = "col-lg-8 col-lg-offset-2 col-sm-12">
-						<p style = "text-align: justify; max-height: 300px; overflow-y:scroll; ">
-							Por medio de la presente, se hace de su conocimiento las nuevas políticas para la prestación
-							del soporte telefónico gratuito <br>
-							A) Dentro del área de soporte telefónico gratuito, los servicios y asesoría que se puede
-							prestar son:<br>
-							1.- Nota: ESTE ES SOLO UN SERVICIO DE ORIENTACION. (NO CONSIDERARSE APROPIADO PARA
-							EMERGENCIAS EN SOLUCION DE PROBLEMAS, O ACCESO AL SISTEMA, POR LOS TIEMPOS DE RESPUESTA,
-							entendemos lo importante de su negocio y la operación del mismo, por lo mismo en este tipo
-							de situaciones cuando sea crucial el uso del sistema y no lo puedan hacer, les recomendamos
-							ampliamente usar el servicio PREMIERE, o la visita de un técnico, que si bien es cierto
-							estos2 servicios tienen costo, pero se hace de forma rápida y efectiva)<br>
-							EN ORIENTACION SIEMPRE TRATAREMOS DE DAR LA MEJOR ATENCION POSIBLE PARA DAR EL MEJOR
-							SERVICIO, SI BIEN ES CIERTO NO ES INSTANTANEO, PERO SI EFECTIVO<br>
-							1.-Aclaracion de Dudas de cualquier tipo, siempre y cuando se refieran específicamente a la
-							operación de PuntoZero, ejemplos:<br>
-							a) Como procesar algunos reportes como listas de precios, clientes, facturación, cobranza,
-							etc.<br>
-							b) Como elaborar factura<br>
-							c) Como cancelar factura y su timbrado<br>
-							d) Como dar de alta clientes o productos<br>
-							e) Como permitir/bloquear accesos a usuarios<br>
-							f) Explicación de Cómo usar o para que sirven las herramientas incluidas en Puntozero.<br>
-							2.- Revisión de problemas al timbrar, o enviar correo de facturación, indicándole al cliente
-							cual fue el motivo del error y haciéndole las respectivas sugerencias, con el objeto de que
-							no vuelvan a llamar por la misma razón.<br>
-							También ayudar a reinstalar Open SSL, cargar de nuevo los Certificados de sellos
-							digitales<br>
-							3.-Correccion de problemas referentes a conexión de base de datos de Puntozero, daños en la
-							información, (ojo: no recuperación de información) y no configuración de antivirus que se
-							hayan instalado o actualizado posteriormente a la instalación de Puntozero, en dado caso
-							solo se podrá asesorar referente a indicarle al cliente el tipo de problema para que sus
-							técnicos o los nuestros en un servicio ya con costo, lo configuren.<br>
-							4.-Ayudaen la instalación de PuntoZero, se le indicara y guiara al cliente como hacerlo,
-							para qué en caso de que tenga varias computadoras, el mismo ya pueda por si solo instalar en
-							las demás. Procurando siempre no estar esperando a que el cliente termine en todas, sino que
-							se le guía en la primera y después el solo ya tendrá que hacer las demás, en caso de algún
-							problema ya se tendrá que comunicar de nuevo para ver el caso específico.<br>
-							5.-Cuando se tengan problemas para su instalación y que esta no se realice en modo normal
-							por cuestiones ajenas a PuntoZero (eje. virus, Windows dañado o con problemas, etc.), estas
-							se tendrán que turnar a un técnico propio del cliente o de nosotros PREFERENTEMENTE donde el
-							servicio ya tendrá un costo adicional.6.-Para editar formatos se le puede asesorar y guiar
-							al cliente como hacerlo, el hecho desagregar algún letrero, dato o formula, pero NO SE
-							DEBERA por parte de personal de soporte telefónico gratuito, modificar formatos,<br>
-							En el caso especifico de que se haya visitado por parte de algún técnico y el formato lo
-							dejaron mal diseñado se deberá reportar al departamento administrativo para que lo turnen de
-							inmediato hacia el técnico que lo dejo fallo, y este resuelva el problema, como garantía del
-							servicio.<br>
-							6.-Como exportar o importar productos desde Excel.<br>
-							7.-Ayuda en caso de que Puntozero no inicie (abre) o se cierra en algún proceso, así como
-							los casos en que marca DEMO y no permite capturar más información.<br>
-							8.-Para revisión de inconsistencias en la información como CXC o CXP, que no aparezcan
-							algunos movimientos o casos específicos en los que se requiere revisar directamente la
-							información del cliente, será requerido:<br>
-							a) Respaldo de Puntozero de la información de la empresa en cuestión vía email.<br>
-							b) Especificar en el mismo correo la falla específica y los números de movimientos a
-							revisar.<br>
-							c) Contacto de la persona que puede aclarar alguna duda o que este bien enterada del
-							problema.<br>
-							NOTA: SI NO SE ENTREGA ESTA INFORMACION, no será procesada la petición y se tendrá como no
-							recibido el respaldo. Y DICOM necesita un lapso de 72 hrs para entregar algún diagnostico o
-							razón del problema en cuestión.<br>
+					<div class = "col-lg-8 col-lg-offset-2 col-sm-12" style = "text-align: justify; max-height: 300px; overflow-y:scroll; ">
+						<h4 class = "bold">Este es un servicio de orientación no mayor a 30 minutos.</h4>
+						<p>
+							(no considerarse apropiado para emergencias en solución de problemas, o acceso al sistema,
+							por los tiempos de respuesta.)<br>
+							Entendemos lo importante que es negocio y la operación optima de este; por esta razón
+							contamos
+							con el servicio técnico y técnico de emergencia, para agilizar y garantizar la más pronta y
+							oportuna solución al problema que se esté presentando.<br>
+							En asesoría telefónica siempre trataremos de dar la mejor atención posible y el mejor
+							servicio,
+							si bien es cierto no es instantáneo, pero si efectivo apegados a las normas y operaciones
+							que
+							se incluyen en asesoría telefónica con un tiempo de respuesta de 2 a 3 horas.<br>
+						</p>
+						
+						<h4 class = "bold">¿En que me pueden ayudar los asesores telefónicos de Punto Zero?</h4>
+						<p>1.-Aclaracion de Dudas de cualquier tipo, siempre y cuando se refieran específicamente a la
+							operación de Punto Zero.</p>
+						<p>2.- Revisión de problemas en la operación de Punto Zero. <br>
+							(Punto Zero no inicie (abre) o se cierra en algún proceso, así como los casos en que marca
+							DEMO) </p>
+						<p>3.-Correccion de problemas referentes a conexión de base de datos de Punto Zero, daños en la
+							información, (no recuperación de información procedimientos no mayores a 30 minutos).</p>
+						<p>4.-Instalacion de programas o archivos auxiliares a Punto Zero (Open SSL, PDF, Crystal
+							Reports Certificados de sellos digitales entre otros.) instalación de PZP terminal (no
+							instalación de servidores ni carga información.)</p>
+						<p>5.-Ajuste de formatos. (ingresar un texto, cambiar la posición de un dato, agregar un campo
+							ya existente, etc.)<br>
+							En el caso especifico de haber solicitado servicio técnico y el formato presente fallas u
+							omisiones comunicarse al área administración para solicitar garantía (3 días máximo después
+							del servicio). </p>
+						<p>6.-Revision* de redes. (no correcciones ni configuraciones) </p>
+						<p>7.-Para revisión de inconsistencias en la información o casos específicos en los que se
+							requiere revisar directamente la información del cliente, será requerido:
+							<br>
+							a) Respaldo de Punto Zero de la información de la empresa en cuestión. </p>
+						<p>NOTA: SI NO SE ENTREGA ESTA INFORMACION, no será procesada la petición y se tendrá como no
+							recibido el respaldo. Y DICOM necesita un lapso de 72 horas para entregar algún diagnostico
+							o razón del problema en cuestión.
 							EN CASO DE QUE EL CLIENTE, POR CUESTIONES DE SEGURIDAD, PERSONALES O DECUALQUIER OTRA
 							INDOLE, NO ACCEDA A ENVIAR INFORMACION, ESTA SE TENDRA QUE TURNAR A DEPARTAMENTO TECNICO
-							HACIENDO LA OBSERVACION DE QUE SERA UNSERVICIO CON COSTO PARA IR A DOMICILIO O REVISARLO VIA
-							REMOTA-TEAMVIEWER.<br>
-							1.1NO SE INCLUYEN ni se podrá prestar asesoría referente a Windows, configuración de redes,
-							eliminación de virus, instalar impresoras, envió de mails desde cuentas ajenas a Puntozero
-							como Yahoo, Hotmail, Gmail, Outlook.<br>
-							No diseñar formatos ni reportes de crystal reports (solo se puede asesorar u orientar en
-							cómo hacerlo)<br>
-							No instalar dispositivos externos o periféricos como impresoras, scanner, lectores, etc.<br>
-							Si usted así lo desea, puede tener una copia de este documento en Word, dando click
-							<a href = "http://www.puntodeventa-puntozero.com/DOCS/Soporte%20Gratuito.doc" target = "_blank">AQUI</a>.
-						</p>
+							HACIENDO LA OBSERVACION DE QUE SERA UN SERVICIO CON COSTO PARA IR A DOMICILIO O REVISARLO
+							VIA REMOTA.</p>
+						
+						<h4 class = "bold">En el área de asesoría telefónica gratuita no podemos realizar los siguientes
+							servicios:</h4>
+						<p>· Prestar asesoría referente a Windows, configuración de redes, eliminación de virus,
+							instalar, envió de mails desde cuentas ajenas a Punto Zero como Yahoo!, Hotmail, Gmail,
+							Outlook.</p>
+						<p>· De diseñar formatos ni reportes de crystalreports.</p>
+						<p>· De instalan dispositivos externos o periféricos como impresoras, scanner, lectores,
+							Basculas, Cámaras etc.</p>
+						<p>(*) revisión comprende de checar que esté instalado o configurado en Windows y Punto Zero
+							realizar las pruebas básicas.</p>
+						<p>Te recordamos que puedes solicitar el servicio técnico para atender todas tus necesidades de
+							una manera más personalizada y como tú lo mereces.</p>
 					</div>
 				</div>
 			</div>
@@ -213,4 +206,9 @@
 		<!-- /.container -->
 	</div>
 	<!-- Collapse -->
+@endsection
+
+@section('jslibrary')
+	<script src = "//code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
 @endsection
