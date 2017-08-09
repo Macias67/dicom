@@ -13,29 +13,24 @@
 					<tr>
 						<th></th>
 						<th>Nombre</th>
-						<th>Información</th>
+						<th>Correo</th>
 						<th>Sitio web</th>
 					</tr>
 					</thead>
 					<tbody>
-					<tr>
-						<td><img src = "http://via.placeholder.com/80x80" alt = "logo"></td>
-						<td>Doe</td>
-						<td>john@example.com</td>
-						<td><a href = "http://www.facebook.com" target = "_blank">Ver</a></td>
-					</tr>
-					<tr>
-						<td><img src = "http://via.placeholder.com/80x80" alt = "logo"></td>
-						<td>Moe</td>
-						<td>mary@example.com</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td><img src = "http://via.placeholder.com/80x80" alt = "logo"></td>
-						<td>Dooley</td>
-						<td>july@example.com</td>
-						<td></td>
-					</tr>
+					@foreach ($distribuidores as $distribuidor)
+						<tr>
+							<td><img src = "http://via.placeholder.com/80x80" alt = "logo"></td>
+							<td>{{$distribuidor->nombre}}</td>
+							<td>{{$distribuidor->correo}}</td>
+							@if (empty($distribuidor->web))
+								<td>Sin sitio</td>
+							@else
+								<td><a href = "{{$distribuidor->web}}" target = "_blank">Ver</a></td>
+							@endif
+						
+						</tr>
+					@endforeach
 					</tbody>
 				</table>
 			</div>

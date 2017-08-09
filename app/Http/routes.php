@@ -54,7 +54,9 @@ Route::get('entrar', function() {
 })->name('entrar');
 
 Route::get('distribuidores', function() {
-	return view('distribuidores');
+	$distribuidores = \App\Distribuidores::all();
+	
+	return view('distribuidores', [ 'distribuidores' => $distribuidores ]);
 })->name('distribuidores');
 
 Route::get('casos-exito', function() {
