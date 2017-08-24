@@ -121,9 +121,9 @@
 							<img src = "img/productos/software.jpg" class = "img-responsive" alt = "">
 							<h6 class = "text-center">SOFTWARE</h6>
 							<ul>
-								<li><a href = "software-light.html">Punto Zero Light</a></li>
-								<li><a href = "software-premium.html">PuntoZero Premium</a></li>
-								<li><a href = "software-restaurantes.html">PuntoZero Restaurantes</a></li>
+								<li><a href = "{{route('software-light')}}">Punto Zero Light</a></li>
+								<li><a href = "{{route('software-premium')}}">PuntoZero Premium</a></li>
+								<li><a href = "{{route('software-restaurantes')}}">PuntoZero Restaurantes</a></li>
 							</ul>
 						</div>
 					</div>
