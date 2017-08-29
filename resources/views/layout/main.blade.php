@@ -41,7 +41,8 @@
 						<span>Tel: (01 33) 13 77 02 43</span><br>
 						<span>Guadalajara, Jalisco, México</span><br>
 						@if(Auth::check())
-							<small>{{ Auth::user()->name }} | <a href = "{{route('logout')}}">Salir</a></small>
+							<small><a href = "{{route('entrar')}}">{{ Auth::user()->name }}</a> |
+								<a href = "{{route('logout')}}">Salir</a></small>
 						@else
 							<small><a href = "{{route('entrar')}}">Entrar</a></small>
 						@endif

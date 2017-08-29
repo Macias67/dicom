@@ -107,8 +107,8 @@
 					<div class = "col-lg-10 col-lg-offset-2 col-sm-12" id = "descargas">
 						<h2 style = "color: rgb(213,116,11)">Operaciones</h2>
 						<p><a href = "{{route('download', ['26kits.docx'])}}">Kits</a></p>
-						<p><a href = "{{route('download', ['27como_hacer_notas_de_credito.docx'])}}">Notas de
-								crédito</a></p>
+						<p><a href = "{{route('download', ['27como_hacer_notas_de_credito.docx'])}}">Notas decrédito</a>
+						</p>
 					</div>
 				</div>
 			</div>
