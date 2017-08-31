@@ -42,25 +42,44 @@ return [
     */
 
     'disks' => [
-
-        'local' => [
+	
+	    'local' => [
             'driver' => 'local',
             'root' => storage_path('app'),
         ],
-
-        'public' => [
+	
+	    'actualizaciones' => [
+		    'driver' => 'local',
+		    'root'   => public_path('actualizaciones'),
+	    ],
+	
+	    'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
             'visibility' => 'public',
         ],
-
-        's3' => [
+	
+	    's3' => [
             'driver' => 's3',
             'key' => 'your-key',
             'secret' => 'your-secret',
             'region' => 'your-region',
             'bucket' => 'your-bucket',
         ],
+	
+	    'ftp' => [
+		    'driver'   => 'ftp',
+		    'host'     => '69.73.141.47',
+		    'username' => 'puntodev@puntodeventa-puntozero.com',
+		    'password' => '6,a~?Jv#]*!Z',
+		
+		    // Optional FTP Settings...
+		    // 'port'     => 21,
+		    // 'root'     => '',
+		    // 'passive'  => true,
+		    // 'ssl'      => true,
+		    // 'timeout'  => 30,
+	    ],
 
     ],
 

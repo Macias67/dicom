@@ -9,6 +9,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use Illuminate\Support\Facades\Storage;
+
 Route::get('/', function() {
 	return view('inicio');
 })->name('inicio');
@@ -64,8 +66,18 @@ Route::get('casos-exito', function() {
 })->name('casos-exito');
 
 Route::get('file/{filename}', function( $filename ) {
-	return response()->download(public_path('descargas\\' . $filename));
+	return response()->download(public_path('descargas/' . $filename));
 })->name('download');
+
+Route::get('actualizacion/{filename}', function( $filename ) {
+	// Get image from ftp server
+	$image = Storage::disk('ftp')->get('public_html/descargas/' . $filename);
+	// Put that image on local storage.
+	Storage::disk('actualizaciones')->put($filename, $image);
+	
+	// User can download this image.
+	return response()->download(public_path('actualizaciones/') . $filename);
+})->name('actualizacion');
 
 // Ruta para generar pago
 Route::post('genera-pago', 'Pago@create')->name('genera.pago');

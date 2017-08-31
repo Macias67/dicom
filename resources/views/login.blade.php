@@ -9,7 +9,6 @@
 			<div class = "container">
 				<div class = "row">
 					<div class = "col-md-8 col-md-push-2">
-						<h5 class = "text-center">{{bcrypt('demo')}}</h5>
 						<h1 class = "text-center">{{ Auth::user()->name }}</h1>
 						<h6 class = "text-center"><a href = "{{route('logout')}}">Salir</a></h6>
 					</div>
@@ -28,7 +27,7 @@
 						@foreach(\App\Infopze::limit(10)->orderBy('Fecha', 'desc')->get() as $index => $producto)
 							<tr data-toggle = "collapse" data-target = "#id_{{$index}}" class = "accordion-toggle">
 								<td>
-									<a href = "ftp://69.73.141.47/public_html/descargas/{{$producto->Ejecutable}}">{{$producto->Ejecutable}}</a>
+									<a href = "{{route('actualizacion', $producto->Ejecutable)}}">{{$producto->Ejecutable}}</a>
 								</td>
 								<td>{{$producto->Version}}</td>
 								<td>{{$producto->Fecha}}</td>
