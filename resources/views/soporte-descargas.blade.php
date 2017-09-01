@@ -71,6 +71,7 @@
 						<h2 style = "color: rgb(213,116,11)">Actualizaciones</h2>
 						<p><a href = "{{route('download', ['16como_actualizar.docx'])}}">Cómo actualizar (desde la
 								página)</a></p>
+						<p><a href = "{{route('updates')}}">Descarga Actualizaciones</a></p>
 					</div>
 				</div>
 				<div class = "col-lg-8 col-lg-offset-2 col-sm-12">

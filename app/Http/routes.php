@@ -51,6 +51,10 @@ Route::get('pago', function() {
 	return view('pago');
 })->name('pago');
 
+Route::get('updates', function() {
+	return view('actualizaciones');
+})->name('updates');
+
 Route::get('entrar', function() {
 	return view('login');
 })->name('entrar');
@@ -70,12 +74,8 @@ Route::get('file/{filename}', function( $filename ) {
 })->name('download');
 
 Route::get('actualizacion/{filename}', function( $filename ) {
-	// Get image from ftp server
 	$image = Storage::disk('ftp')->get('public_html/descargas/' . $filename);
-	// Put that image on local storage.
 	Storage::disk('actualizaciones')->put($filename, $image);
-	
-	// User can download this image.
 	return response()->download(public_path('actualizaciones/') . $filename);
 })->name('actualizacion');
 

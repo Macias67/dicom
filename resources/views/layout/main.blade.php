@@ -40,12 +40,12 @@
 					<div class = "col-md-9 col-sm-6">
 						<span>Tel: (01 33) 13 77 02 43</span><br>
 						<span>Guadalajara, Jalisco, México</span><br>
-						@if(Auth::check())
+						{{--@if(Auth::check())
 							<small><a href = "{{route('entrar')}}">{{ Auth::user()->name }}</a> |
 								<a href = "{{route('logout')}}">Salir</a></small>
 						@else
 							<small><a href = "{{route('entrar')}}">Entrar</a></small>
-						@endif
+						@endif--}}
 					</div>
 					<div class = "col-md-3 col-sm-6">
 						<a class = "fa fa-facebook-square fa-2x" href = "https://www.facebook.com/PuntodeventaPZ/?ref=br_rs" target = "_blank"></a>
